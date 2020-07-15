@@ -1,0 +1,8 @@
+<launch>
+    <node name="publisher_node" pkg="image_publisher" 
+    type="demo_image_publisher" args="/home/nullbyte/Desktop/tensorRT/download.jpg" 
+    output="screen"/>
+
+    <node name="subscriber_node" pkg="image_publisher"
+    type="demo_image_subscriber" output="screen"/>
+</launch>
